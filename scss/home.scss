@@ -1,0 +1,93 @@
+@import 'base/mixin'; 
+body,html{
+    @include setup()
+}
+body{
+    background-image : url(https://png.pngtree.com/background/20210710/original/pngtree-fresh-book-learning-advertising-background-picture-image_980639.jpg);
+}
+/* Navbar */
+.nav {
+    min-height: 42px;
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed;
+    width: 100vw; */
+}
+
+.nav-list { 
+    padding: 0;
+    margin: 16 auto;
+}
+.nav-scroll{
+    width: 500px;
+    color: whitesmoke;
+    padding-top: 12px;
+}
+.nav-item {
+    color: whitesmoke;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.nav-item a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+.nav-item :hover{
+    color: black;
+    font-weight: 500;
+}
+/* Body */
+.main img{
+    width: 174.19px;
+    height: 210px; 
+    margin-top: 4px;
+    object-fit: cover;
+}
+.card--btn:hover{
+    color: lightblue;
+}
+.img{
+    object-fit: cover;
+}
+.main__card{
+    @include card();
+    background-color: pink;
+}
+.main__card:hover{
+    box-shadow: 5px 10px 8px #888888;
+}
+.card--body{
+    width: 150px;
+    height: 160px;
+}
+.main{
+    @include container__setup();
+}
+.card--title{
+    text-align: center;
+}
+.xoa{
+    margin-top: 10px;
+}
+/* Footer */
+.footer{
+    margin-top: 40px;
+    padding-bottom: 100px;
+    border-top: 2px solid purple;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    background-color: pink;
+}
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.info{
+    outline: none;
+    border: 1px solid orange;
+}

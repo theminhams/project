@@ -1,0 +1,18 @@
+@import 'base/mixin';
+body{
+    @include setup();
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-fresh-book-learning-advertising-background-picture-image_980639.jpg);
+}
+.login{
+ @include btn__setup();
+}
+marquee{
+    font-size: 30px;
+    color: purple;
+}
