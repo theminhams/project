@@ -1,5 +1,5 @@
 import {auth} from "./config.js"
-import {  signOut } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+import {  signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 const productList = document.querySelector(".main")
 fetch('https://65859ecf022766bcb8c90509.mockapi.io/Task', {
   method: 'GET',

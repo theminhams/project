@@ -1,5 +1,5 @@
 import {auth} from "./config.js"
-import { signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+import { signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 const loginButton = document.querySelector(".login")
 const provider = new GoogleAuthProvider();
 const xuly = (e) => {
